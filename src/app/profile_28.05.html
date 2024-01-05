@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="website_stylesheet.css" />
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.prod.js"></script>
+        
+        <!-- <script src="main_menu.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <title>Parent Profile - Dream Ride</title>
+    </head>
+
+    <body>
+        <!-- ///////////////////////////////// TOPNAV ///////////////////////////////////////// -->
+            <topnav>
+                <div class="container">
+                    <div class="row">
+                        <div class="topbar">
+                            <!-- Left panel - contact info -->
+                            <div class="col-6">
+                                <div class="topbar-mail">
+                                    <div class="icon">
+                                        <ion-icon name="mail"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        <a href="mailto:info@dreamride.com">info@dreamride.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right panel - login/register/user -->
+                            <div class="col-6">
+
+                                <!-- ////////////////////// Right panel - after login ////////////////////////////// -->
+            
+                                <div class="topbar-login-register">
+                                    <div class="icon">
+                                        <ion-icon name="lock-open"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        Hello, <a href="#">parent_username</a>
+                                    </div>
+                                </div> 
+                               
+                                
+                                <!-- here left panel after login ends -->
+
+                              </div>
+                        </div>
+                    </div>
+            </topnav> 
+
+
+        <!-- ///////////////////////////////// NAVBAR - Logo, Main manu ///////////////////////////////////////// -->
+        
+        <div class="container">    
+            <div class="row">
+                <nav class="navbar">
+                    <div class="col-5">
+                        <!-- LOGO -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/DreamRide_logo.png"></a>
+                            <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="nav-links">
+                            <!-- NAVIGATION MENU -->
+                            <nav class="main-menu">
+                                <ul class="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+
+                                <li class="dropdown">
+                                    <a href="talents.html">Talents</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                        
+                                <div class="mobile-menu">
+                                <div class="hamburger">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <ul class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                        
+                                    <li class="dropdown">
+                                    <a href="talents.html">Talents</a>
+                                    <!-- DROPDOWN MENU - set not to be displayed on mobile -->
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul> 
+                                    </li>
+                                    
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- ///////////////////////////////// USER MENU ///////////////////////////////////////// -->
+        
+        <div class="navigation">
+            <ul>
+                <li class="list active">
+                    <a href="profile.html">
+                      <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                      </span>
+                      <span class="text">Profile</span>
+                    </a>
+                  </li>
+
+                <li class="list">
+                    <a href="notifications.html">
+                    <span class="icon">
+                        <ion-icon name="notifications"></ion-icon>
+                    </span>
+                    <span class="text">Notifications</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="dashboard.html">
+                      <span class="icon">
+                        <ion-icon name="layers"></ion-icon>
+                      </span>
+                      <span class="text">Dashboard</span>
+                    </a>
+                  </li>
+
+                  <li class="list">
+                    <a href="favorites.html">
+                      <span class="icon">
+                        <ion-icon name="heart"></ion-icon>
+                      </span>
+                      <span class="text">Favorites</span>
+                    </a>
+                  </li>
+              
+                <li class="list">
+                    <a href="messages.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                    </span>
+                    <span class="text">Messages</span>
+                    </a>
+                </li>
+         
+              
+              <div class="indicator"></div>
+            </ul>
+          </div>
+          
+          
+        <!-- ///////////////////////////////// CONTENT - Not finalized ///////////////////////////////////////// -->
+
+        <div class="container" id="parentAccount">
+
+            <!-- 2 column in a row -->
+            <div class="row-70">
+                <div class="col-4">
+                    <a href="profile_child.html">Check -> Child profile page</a>  // Only for demo. 
+                    <br/><br/>
+                    <h3>Parent profile details</h3>
+                    <p><b>First name: </b>{{ account.first_name }}</p>
+                    <p><b>Last name: </b>{{ account.last_name}}</p>
+                    <p><b>E-mail: </b>{{ account.email }}</p>
+                    <p><b>Language: </b>{{ account.language }}</p>
+                    <p><b>Max. number daily push messages from every child: </b>5</p>
+                    <button class="button">Update</button>
+                    <button class="button">Delete</button>
+
+                    <br/>
+                    <br/>
+
+                    <h3>My children</h3>
+                    <button class="button">New child account</button>
+                    <br/>
+                    <br/>
+
+                    <div class="children-photos">
+                        
+                            <div class="image-container">
+                                <img src="https://www.parentmap.com/sites/default/files/styles/1200x1200_scaled/public/2020-03/academic-girl-istock.jpg?itok=QkM-iVKk" alt="Your Image">
+                                <div class="overlay">
+                                <a href="#">Natalia</a>
+                                </div>
+                            </div>
+                            <div class="child-activity-track">
+                                <ul>
+                                    <li class="list">
+                                        <a href="#">
+                                        <span class="icon">
+                                            <ion-icon name="document"></ion-icon>
+                                        </span>
+                                        <span class="text">5 Posts waiting approval</span>
+                                        </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#">
+                                        <span class="icon">
+                                            <ion-icon name="magnet"></ion-icon>
+                                        </span>
+                                        <span class="text">37 Posts reactions</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="image-container">
+                                <img src="https://img.freepik.com/free-photo/cute-boy-with-halloween-pumpkin-concept_23-2148676018.jpg?w=900&t=st=1684852464~exp=1684853064~hmac=38076bd3d0a2f0e748ada827093cd0dc04beabfcc6dcae9a6e31ccbb539689da" alt="Your Image">
+                                <div class="overlay">
+                                <a href="#">Tom</a>
+                                </div>
+                            </div>
+                            <div class="child-activity-track">
+                                <ul>
+                                    <li class="list">
+                                        <a href="#">
+                                        <span class="icon">
+                                            <ion-icon name="document"></ion-icon>
+                                        </span>
+                                        <span class="text">2 Posts waiting approval</span>
+                                        </a>
+                                    </li>
+                                    <li class="list">
+                                        <a href="#">
+                                        <span class="icon">
+                                            <ion-icon name="magnet"></ion-icon>
+                                        </span>
+                                        <span class="text">101 Posts reactions</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        
+                        
+                    </div>
+
+                </div>
+                    
+               
+
+                <div class="col-8">
+                    <h3>Friends</h3>
+                    <p>Horizontal scrol with all friends</p>
+                    <p>Click on a photo <a href="friend.html">links</a> to the portfolio page of those friend. </p>
+                    <br/><br/>
+                    <hr>
+                    <h3>Portfolio</h3>
+                    <p>"Pinterest" type of board with all posts made by the user.</p>
+                    <p>Click on a post links to the exactly place on the timeline in the corresponding category.</p>
+                    <br/><br/>
+                </div>
+
+
+
+                
+
+            </div>
+
+            
+            </div>
+
+        </div>
+
+
+        <!-- //////////////////////////////////////////  FOOTER  ///////////////////////////////////////  -->
+
+        <div class="container">    
+            <div class="row">
+                <footer class="footer">
+                    <div class="col-12">
+                        <div class="footer-logo">
+                            <img src="img/DreamRide_logo_yellow.png">
+                            <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                        <div class="contact-info-footer">DreamRide 2023 &nbsp; | &nbsp; <a href="mailto:info@dreamride.com">info@dreamride.com</a></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="main_menu.js"></script>
+        <script src="usermenu.js"></script>
+        <script src="vue_app.js"></script>
+        
+    </body>
+</html>

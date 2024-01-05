@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.prod.js"></script>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="registration_form.js"></script>
+
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="website_stylesheet.css" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <title>View full post - Dream Ride</title>
+    </head>
+
+    <body>
+        <!-- ///////////////////////////////// TOPNAV ///////////////////////////////////////// -->
+            <topnav>
+                <div class="container">
+                    <div class="row-100">
+                        <div class="topbar">
+                            <!-- Left panel - contact info -->
+                            <div class="col-6">
+                                <div class="topbar-mail">
+                                    <div class="icon">
+                                        <ion-icon name="mail"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        <a href="mailto:info@dreamride.com">info@dreamride.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right panel - login/register/user -->
+                            <div class="col-6">
+
+                                <!-- ////////////////////// Right panel - after login ////////////////////////////// -->
+            
+                                <div class="topbar-login-register">
+                                    <div class="icon">
+                                        <ion-icon name="lock-open"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        Hello, <a href="#">parent_username</a>
+                                    </div>
+                                </div> 
+                               
+                                
+                                <!-- here left panel after login ends -->
+
+                              </div>
+                        </div>
+                    </div>
+            </topnav> 
+
+
+        <!-- ///////////////////////////////// NAVBAR - Logo, Main manu ///////////////////////////////////////// -->
+        
+        <div class="container">    
+            <div class="row">
+                <nav class="navbar">
+                    <div class="col-5">
+                        <!-- LOGO -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/DreamRide_logo.png"></a>
+                            <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="nav-links">
+                            <!-- NAVIGATION MENU -->
+                            <nav class="main-menu">
+                                <ul class="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+
+                                <li class="dropdown">
+                                    <a href="talents.html">Talents</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                        
+                                <div class="mobile-menu">
+                                <div class="hamburger">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <ul class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                        
+                                    <li class="dropdown">
+                                    <a href="talents.html">Talents</a>
+                                    <!-- DROPDOWN MENU - set not to be displayed on mobile -->
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul> 
+                                    </li>
+                                    
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+        <div class="space-xxs">&nbsp;</div>
+
+        <!-- ///////////////////////////////// USER MENU ///////////////////////////////////////// -->
+        
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="profile.html">
+                      <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                      </span>
+                      <span class="text">Profile</span>
+                    </a>
+                  </li>
+
+                <li class="list">
+                    <a href="notifications.html">
+                    <span class="icon">
+                        <ion-icon name="notifications"></ion-icon>
+                    </span>
+                    <span class="text">Notifications</span>
+                    </a>
+                </li>
+
+                <li class="list">
+                    <a href="dashboard.html">
+                      <span class="icon">
+                        <ion-icon name="layers"></ion-icon>
+                      </span>
+                      <span class="text">Dashboard</span>
+                    </a>
+                  </li>
+
+                  <li class="list">
+                    <a href="favorites.html">
+                      <span class="icon">
+                        <ion-icon name="heart"></ion-icon>
+                      </span>
+                      <span class="text">Favorites</span>
+                    </a>
+                  </li>
+              
+                <li class="list">
+                    <a href="messages.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                    </span>
+                    <span class="text">Messages</span>
+                    </a>
+                </li>
+         
+              
+              <div class="indicator-none"></div>
+            </ul>
+          </div>
+          
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+        <!-- //////////////////////////////////////// CONTENT ///////////////////////////////////////// -->
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <div class="container" id="">
+
+            <div class="space-xl">&nbsp;</div>
+
+            <!-- ////////////////////////////////////////////////////////////////////////// Begin of the first row -->
+            <!-- 2 column in the first row -->
+            <div class="row-70">
+
+                <!-- ///////////// Left col -> View full post content //////////////// -->
+                <div class="col-8">
+                    <div class="post-container">
+                        <div class="full-post-content">
+                            <!-- Header -->
+                            <div class="post-header">
+                                <div class="row-70-post">
+                                    <div class="col-3">
+                                        <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="post-author">
+                                            <a href="#">Publisher username</a>
+                                            <p>18 years old</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!-- End of full post content -->
+                         
+
+                        <!-- Row 1: Title and information about filling in the form  -->
+                        <div class="row-70">
+                            <div class="col-12">
+                                <!-- Post title -->
+                                <h3>Tick Tock Turkey and the Disappearing Sandwich</h3>
+                                <div class="space-s">&nbsp;</div>
+                                <div class="one-col-input">
+                                    <p class="form-fields-clarification" style="text-align: center; font-weight: 600; margin-top: -1.5rem;">Post category: <a href="storywriters.html">Story writers</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row-100">
+                            <div class="col-12">
+                                <div class="one-col-input">
+                                    <p class="full-post-main-content">
+                                        Once upon a time, in the small town of Snackville, there lived a peculiar turkey named Tick Tock. Tick Tock was not your average turkey. He had a knack for solving mysteries and a particular love for sandwiches. Tick Tock was always on the lookout for new and delicious sandwiches to try. <br/>
+                                        One sunny day, as Tick Tock strolled through the town, he noticed a commotion near the local deli. Curiosity piqued, he waddled closer to see what was going on. The townspeople were gathered around, whispering and pointing at something.<br/>
+                                        Tick Tock approached a group of chattering chipmunks and asked, "Excuse me, what's happening here?"<br/>
+                                        One of the chipmunks replied, "Oh, Tick Tock, we have a problem. The deli's prized sandwich, the Grand Gobbler, has disappeared! It was here just a few minutes ago, and now it's gone!"<br/>
+                                        Tick Tock's eyes widened with excitement. A sandwich mystery! "Fear not, my friends," he proclaimed. "I, Tick Tock Turkey, will get to the bottom of this. No sandwich shall vanish under my watch!"<br/>
+                                        Tick Tock swung into action, examining the crime scene. He noticed crumbs scattered on the ground and a trail leading away from the deli. Following the trail, Tick Tock arrived at the park, where he saw a trail of lettuce leaves and mayo smears.<br/>
+                                        With his detective instincts kicking in, Tick Tock carefully analyzed the evidence. He noticed that the trail led to a nearby tree. Tick Tock looked up and spotted a mischievous squirrel named Sammy, holding the missing Grand Gobbler sandwich in his tiny paws.<br/>
+                                        "Ah-ha! I've found you, Sammy!" Tick Tock exclaimed.<br/>
+                                        Startled, Sammy dropped the sandwich and chittered nervously. "I... I didn't do it, Tick Tock. I found the sandwich lying on the ground, abandoned. I thought it was a gift from the sandwich gods."<br/>
+                                        Tick Tock approached Sammy with a smile. "No need to fret, Sammy. Let's solve this mystery together." He offered the squirrel a friendly wing.<br/>
+                                        Sammy hesitated for a moment but then accepted the offer. "Alright, Tick Tock. Let's find out who the real sandwich thief is."<br/>
+                                        The unlikely duo retraced the trail of lettuce and mayo, searching for more clues. They questioned the townsfolk and discovered that a mischievous group of raccoons had been causing trouble in Snackville recently.<br/>
+                                        Tick Tock and Sammy followed the clues and eventually stumbled upon the raccoons' secret hideout. They peered through a crack in the door and saw the raccoons feasting on sandwiches, including the missing Grand Gobbler.<br/>
+                                        With a plan in mind, Tick Tock and Sammy enlisted the help of the townspeople. Together, they surrounded the hideout and startled the raccoons. Startled and overwhelmed, the raccoons dropped the sandwiches and fled.<br/>
+                                        Tick Tock triumphantly retrieved the Grand Gobbler sandwich and returned it to the grateful deli owner. The townspeople cheered, and Tick Tock and Sammy became the heroes of Snackville.<br/>
+                                        From that day forward, Tick Tock Turkey and Sammy the squirrel became the town's beloved sandwich guardians, always ready to solve mysteries and protect the sandwiches of Snackville from disappearing.<br/>
+                                        And so, the legend of Tick Tock Turkey and the Disappearing Sandwich lived on, reminding everyone to cherish their snacks and to be wary of sandwich thieves lurking nearby.
+                                    </p>
+                                </div>
+
+                                
+                                
+                                <div class="space-xxs">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>  
+                </div> <!-- End of left column and section View full post content -->
+                
+                
+
+                <!-- ///////////// Right col -> Section: Comments (read, write, like) or take an action "Create new post as reply of this one" //////////////// -->
+                <div class="col-4">
+                    <div class="post-container">
+                        <div class="full-post-content">
+                             <!-- Header -->
+                             <div class="header-comments">
+                                <div class="row-70-post">
+                                    <!-- Social reactions -->
+                                    <div class="row-100-post">
+                                        <!-- Like button -->
+                                        <div class="col-2">
+                                        <!--  <button class="button-post-reactions" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                </span>
+                                            </button> -->
+                                            <!-- Icon filled when post has been already liked -->
+                                            <button class="button-post-reacted" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="thumbs-up"></ion-icon>
+                                                </span>
+                                            </button>
+                                        </div>
+        
+                                        <!-- Statistic social interaction -->
+                                        <div class="col-8">
+                                            <p class="post-info">345 Likes | <a class="link-to-full-post" href="view_full_post.html">872 Reactions</a></p>
+                                        </div>
+        
+                                        <!-- Favorites (Save) button -->
+                                        <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="heart-outline"></ion-icon>
+                                                </span>
+                                            </button>
+                                            <!-- Icon filled when post has been already saved -->
+                                            <!-- <button class="button-post-reacted" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="heart"></ion-icon>
+                                                </span>
+                                            </button> -->
+                                        </div>
+                                    </div> <!-- End of section "Social reactions" -->
+                                </div>
+                             </div>
+                        </div>
+                        
+
+                        <!-- Comments -->
+                        <div class="full-post-content">
+                            <div class="row-70">
+                                <div class="col-12">
+                                        <div class="space-s">&nbsp;</div>
+                                        <div class="container-comments">
+                                            <div class="comment">
+                                                <div class="comment-author">
+                                                    <a href="">Username 1</a> | 8 years old
+                                                    &nbsp; &nbsp;
+                                                    <i class="fa-solid fa-reply"></i>
+                                                    &nbsp; &nbsp;
+                                                    <ion-icon class="before-action" name="thumbs-up-outline"></ion-icon>
+                                                    <!-- After click solid, not outline -->
+                                                    <!-- <ion-icon class="after-action" name="thumbs-up"></ion-icon> -->
+                                                </div>
+                                                <p>That's very cool story. I like it :-)</p>
+                                            </div>
+                                            <div class="reply">
+                                                <div class="comment-author">
+                                                    <ion-icon name="return-down-forward-outline"></ion-icon>
+                                                    <a href="">Username 39</a> | 11 years old
+                                                    &nbsp; &nbsp;
+                                                    <i class="fa-solid fa-reply"></i>
+                                                    &nbsp; &nbsp;
+                                                    <ion-icon class="before-action" name="thumbs-up-outline"></ion-icon>
+                                                    <!-- After click solid, not outline -->
+                                                    <!-- <ion-icon class="after-action" name="thumbs-up"></ion-icon> -->
+                                                </div>
+                                                <p>Yeah, indeed. Let's draw this funny turkey.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="container-comments">
+                                            <div class="comment">
+                                                <div class="comment-author">
+                                                    <a href="">Username 245</a> | 7 years old
+                                                    &nbsp; &nbsp;
+                                                    <i class="fa-solid fa-reply"></i>
+                                                    &nbsp; &nbsp;
+                                                    <ion-icon  class="before-action" name="thumbs-up-outline"></ion-icon>
+                                                    <!-- After click solid, not outline -->
+                                                   <!--  <ion-icon class="after-action" name="thumbs-up"></ion-icon> -->
+                                                </div>
+                                                <p>My favorite fairy tale ever.</p>
+                                            </div>
+                                            <div class="reply">
+                                                <div class="comment-author">
+                                                    <ion-icon name="return-down-forward-outline"></ion-icon>
+                                                    <a href="">Username 579</a> | 7 years old
+                                                    &nbsp; &nbsp;
+                                                    <i class="fa-solid fa-reply"></i>
+                                                    &nbsp; &nbsp;
+                                                    <!-- <ion-icon class="before-action" name="thumbs-up-outline"></ion-icon> -->
+                                                    <!-- After click solid, not outline -->
+                                                    <ion-icon class="after-action" name="thumbs-up"></ion-icon>
+                                                </div>
+                                                <p>No way. That's mine favorite.</p>
+                                            </div>
+                                            <div class="reply">
+                                                <div class="comment-author">
+                                                    <ion-icon name="return-down-forward-outline"></ion-icon>
+                                                    <a href="">Username 617</a> | 8 years old
+                                                    &nbsp; &nbsp;
+                                                    <i class="fa-solid fa-reply"></i>
+                                                    &nbsp; &nbsp;
+                                                    <ion-icon class="before-action" name="thumbs-up-outline"></ion-icon>
+                                                    <!-- After click solid, not outline -->
+                                                    <!-- <ion-icon class="after-action" name="thumbs-up"></ion-icon> -->
+                                                </div>
+                                                <p>I haven't heard about it till now. But it's cool.</p>
+                                                <div class="one-col-input">
+                                                    <div class="input-post-direct-reply">
+                                                        <!-- <i class="fa-solid fa-file-lines"></i> -->
+                                                        <textarea v-model="" placeholder="Leave here your direct reply message." rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                   
+                                </div>
+                            </div> 
+                        </div> <!-- End of section "Comments" -->
+
+                        
+                        <div class="row-70">
+                            <div class="col-12">
+                                <div class="space-s">&nbsp;</div>
+
+                                <div class="one-col-input">
+                                    <div class="input-post-comment">
+                                        <!-- <i class="fa-solid fa-file-lines"></i> -->
+                                        <textarea v-model="" placeholder="Feel free to share with us your toughts, feelings, ideas about this post." rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="space-posts">&nbsp;</div>
+                                <button class="button-share-post" type="submit" id="publishNowButton">
+                                    <span class="icon">
+                                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                                    </span>
+                                    Leave a comment
+                                </button>
+
+                                <button class="button-share-post" type="submit" id="publishNowButton">
+                                    <span class="icon">
+                                        <ion-icon name="push"></ion-icon>
+                                    </span>
+                                    Reply as new post
+                                </button>
+                                <div class="space-s">&nbsp;</div>
+                            </div>
+                        </div>
+
+                        
+                               
+                    </div><!-- End of accent section -->
+                    <div class="space-xl">&nbsp;</div>
+                </div> <!-- End of section Preview post before publish -->
+
+                    
+
+            </div> <!-- End of the first row -->
+            <!-- ////////////////////////////////////////////////////////////////////////// End of the first row -->
+
+            
+            
+
+        </div>
+
+        <div class="space-m">&nbsp;</div>
+        <div class="space-m">&nbsp;</div>
+
+        <!-- //////////////////////////////////////////  FOOTER  ///////////////////////////////////////  -->
+
+        <div class="container">    
+            <div class="row">
+                <footer class="footer">
+                    <div class="col-12">
+                        <div class="space-l">&nbsp;</div>
+                            <div class="footer-logo">
+                                <img src="img/DreamRide_logo_yellow.png">
+                                <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                            </div>
+                            <div class="contact-info-footer">DreamRide 2023 &nbsp; | &nbsp; <a href="mailto:info@dreamride.com">info@dreamride.com</a></div>
+                        <div class="space-xs">&nbsp;</div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="config.js"></script>
+        <script src="main_menu.js"></script>
+        <script src="usermenu.js"></script>
+<!--         <script src="friends_slider_gallery.js" defer></script> -->
+        <script src="vue_app.js"></script>
+
+        <!-- <script>
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                        $('#imagePreview').hide();
+                        $('#imagePreview').fadeIn(650);
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+            $("#imageUpload").change(function() {
+                readURL(this);
+            });
+        </script> -->
+
+    </body>
+</html>

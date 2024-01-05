@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="website_stylesheet.css" />
+        
+        <!-- <script src="main_menu.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <title>Dashboard - Dream Ride</title>
+    </head>
+
+    <body>
+        <!-- ///////////////////////////////// TOPNAV ///////////////////////////////////////// -->
+            <topnav>
+                <div class="container">
+                    <div class="row">
+                        <div class="topbar">
+                            <!-- Left panel - contact info -->
+                            <div class="col-6">
+                                <div class="topbar-mail">
+                                    <div class="icon">
+                                        <ion-icon name="mail"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        <a href="mailto:info@dreamride.com">info@dreamride.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right panel - login/register/user -->
+                            <div class="col-6">
+
+                                <!-- ////////////////////// Right panel - after login ////////////////////////////// -->
+            
+                                <div class="topbar-login-register">
+                                    <div class="icon">
+                                        <ion-icon name="lock-open"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        Hello, <a href="#">child_username</a>
+                                    </div>
+                                </div> 
+                               
+                                
+                                <!-- here left panel after login ends -->
+
+                              </div>
+                        </div>
+                    </div>
+            </topnav> 
+
+
+        <!-- ///////////////////////////////// NAVBAR - Logo, Main manu ///////////////////////////////////////// -->
+        
+        <div class="container">    
+            <div class="row">
+                <nav class="navbar">
+                    <div class="col-5">
+                        <!-- LOGO -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/DreamRide_logo.png"></a>
+                            <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="nav-links">
+                            <!-- NAVIGATION MENU -->
+                            <nav class="main-menu">
+                                <ul class="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+
+                                <li class="dropdown">
+                                    <a href="talents.html">Talents</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                        
+                                <div class="mobile-menu">
+                                <div class="hamburger">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <ul class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                        
+                                    <li class="dropdown">
+                                    <a href="talents.html">Talents</a>
+                                    <!-- DROPDOWN MENU - set not to be displayed on mobile -->
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul> 
+                                    </li>
+                                    
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="space-xxs">&nbsp;</div>
+        
+        <!-- ///////////////////////////////// USER MENU ///////////////////////////////////////// -->
+        
+        <div class="navigation">
+            <ul>
+                <li class="list">
+                    <a href="profile.html">
+                      <span class="icon">
+                        <ion-icon name="person"></ion-icon>
+                      </span>
+                      <span class="text">Profile</span>
+                    </a>
+                  </li>
+
+                <li class="list">
+                    <a href="notifications.html">
+                    <span class="icon">
+                        <ion-icon name="notifications"></ion-icon>
+                    </span>
+                    <span class="text">Notifications</span>
+                    </a>
+                </li>
+
+                <li class="list active">
+                    <a href="dashboard.html">
+                      <span class="icon">
+                        <ion-icon name="layers"></ion-icon>
+                      </span>
+                      <span class="text">Dashboard</span>
+                    </a>
+                  </li>
+
+                  <li class="list">
+                    <a href="favorites.html">
+                      <span class="icon">
+                        <ion-icon name="heart"></ion-icon>
+                      </span>
+                      <span class="text">Favorites</span>
+                    </a>
+                  </li>
+              
+                <li class="list">
+                    <a href="messages.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                    </span>
+                    <span class="text">Messages</span>
+                    </a>
+                </li>
+         
+              
+              <div class="indicator"></div>
+            </ul>
+          </div>
+          
+          
+        <!-- ///////////////////////////////// CONTENT - Not finalized ///////////////////////////////////////// -->
+
+        <div class="container">
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+
+            <div class="row-70">
+                <div class="col-12">
+                    <div class="content">
+                        <h2>This page is under construction</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+            <div class="space-xl">&nbsp;</div>
+        </div>
+
+        <!-- //////////////////////////////////////////  FOOTER  ///////////////////////////////////////  -->
+
+        <div class="container">    
+            <div class="row">
+                <footer class="footer">
+                    <div class="col-12">
+                        <div class="space-l">&nbsp;</div>
+                        <div class="footer-logo">
+                            <img src="img/DreamRide_logo_yellow.png">
+                            <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                        </div>
+                        <div class="contact-info-footer">DreamRide 2023 &nbsp; | &nbsp; <a href="mailto:info@dreamride.com">info@dreamride.com</a></div>
+                        <div class="space-xs">&nbsp;</div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="main_menu.js"></script>
+        <script src="usermenu.js"></script>
+    </body>
+</html>

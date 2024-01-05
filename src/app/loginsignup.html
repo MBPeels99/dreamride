@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script> 
+    <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.prod.js"></script>
+    
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Log in & Registration - Dream Ride</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="forms-container">
+        <!-- Log in div -->
+        <div class="signin-signup">
+       <!-- <form id="login_form" action="../be/pagecontrollers/LoginMechanism.php" method="POST" class="sign-in-form" onsubmit="return ValidateLogin();"> -->
+            <form id="login_form" action="../be/pagecontrollers/LoginMechanism.php" method="POST" class="sign-in-form" onsubmit="return ValidateLogin();">
+                  <!-- Logo -->
+                  <a href="index.html"><img src="img/DreamRide_logo.png" class="logo-login" alt="" /></a>
+                  
+                  <!-- Login form title -->
+                  <h2 class="title-blue">Hello friend</h2>
+                  
+                  <!-- Input fields -->
+                  <div class="one-col-input">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="username" placeholder="Username" />
+                      </div>
+                  </div>
+                  <div class="one-col-input">
+                      <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" name="password" placeholder="Password" />
+                      </div>
+                  </div>
+                  
+                  <!-- Switch between parent <-> child account login -->
+                  <div class="input-field-radio">
+                    <fieldset>
+                      <input type="radio" name="login-form" value="child" id="child-login-form" />
+                      <label for="child">I am a child.</label>
+                      <input type="radio" name="login-form" value="parent" id="parent-login-form" />
+                      <label for="parent">I am a parent.</label>
+                  </fieldset>
+                </div>
+
+                  <!-- Login button -->
+                  <input type="submit" name="btn_login" value="Login" class="btn solid" />
+          </form>
+        </div>
+      </div> 
+
+      
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h2 class="title-white">First visit?</h2>
+            <br/>
+            <p>
+              Creating an account gives you the possibility to exchange ideas within the creative community. Everything that happens here influences the next book edition. 
+              <br/>
+              Don't waste time and sign up now.
+            </p>
+            <br/>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+       
+        </div>
+
+        <!-- Registration div -->
+        <div class="panel right-panel">
+       <!-- <form id="signup_form" action="../be/pagecontrollers/SignupMechanism.php" method="POST" class="sign-up-form" onsubmit="return ValidateParentRegistration();"> -->
+            <form id="signup_form" action="../be/pagecontrollers/SignupMechanism.php" method="POST" class="sign-up-form" onsubmit="return ValidateParentRegistration();">
+                  
+                    <!-- Logo -->
+                    <img src="img/DreamRide_logo-blue.png" class="logo-registration" alt="" />
+                    
+                    <!-- Subtitle -->
+                    <h3 class="title-blue">One of us?</h3>
+                    <!-- Back to Login section button-->
+                    <button class="btn transparent-blue" id="sign-in-btn">
+                        Log in
+                    </button>
+
+                    <br/><br/>
+                    
+                    <!-- Registration form title -->
+                    <h2 class="title-blue">Parent registration form</h2>
+
+                    <div class="two-col-input">
+                        <div class="col">
+                            <div class="input-field" id="input_field_first_name">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="first_name" placeholder="First name" id="first_name" onfocusout="validateFirstName()" />
+                              </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="input-field" id="input_field_last_name">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="last_name" placeholder="Last name" id="last_name" onfocusout="validateLastName()" />
+                              </div>
+                        </div>
+                    </div>
+  
+                    <div class="one-col-input">  
+                            <div class="input-field" id="input_field_date_of_birth">
+                                <i class="fas fa-calendar"></i>
+                                <!-- <input type="date" name="date_of_birth" placeholder="Date of birth" id="date_of_birth" onfocusout="validateDateOfBirth()"/> -->
+                                <input type="text" name="date_of_birth" placeholder="Date of birth" onfocus="(this.type='date')" onblur="(this.type='text', validateDateOfBirth())" id="date_of_birth"  />
+                            </div>
+                    </div>
+                    <div class="one-col-input"> 
+                            <div class="input-field" id="input_field_email">
+                              <i class="fas fa-envelope"></i>
+                              <input type="email" name="email" placeholder="Email" id="email" onfocusout="validateEmail()"/>
+                            </div>
+                    </div>
+                    <div class="one-col-input"> 
+                            <div class="input-field" id="input_field_password">
+                              <i class="fas fa-lock"></i>
+                              <input type="password" name="password" placeholder="Password" id="password" onfocusout="validatePassword()"/>
+                            </div>      
+                    </div>
+                    
+                    <div class="two-col-input">
+                            <div class="col">
+                              <div class="input-field" id="input_field_country">
+                                <i class="fas fa-thumbtack"></i>
+                                <select name="country" form="signup_form" id="country" onfocusout="validateCountry()">
+                                  <option selected value="not_selected">Select your country</option>
+                                  <option value="BG">Bulgaria</option>
+                                  <option value="DE">Germany</option>
+                                  <option value="ES">Spain</option>
+                                  <option value="NL">The Netherlands</option>
+                                  <option value="US">United States</option>
+                                </select>
+                              </div>
+                            </div>
+  
+                            <div class="col">
+                              <div class="input-field" id="input_field_language">
+                                <i class="fas fa-star"></i>
+                                <select name="language" form="signup_form" id="language" onfocusout="validateLanguage()">
+                                  <option selected value="not_selected">Select language</option>
+                                  <option value="BG">Bulgarian</option>
+                                  <option value="DE">German</option>
+                                  <option value="ES">Spanish</option>
+                                  <option value="NL">Dutch</option>
+                                  <option  value="US">English</option>
+                                </select>
+                              </div>
+                            </div>
+                    </div>
+                    
+                    <fieldset>
+                        <div class="input-field-checkbox" id="alert_terms_and_conditions">
+                            <div class="square" >
+                                <input type="checkbox" name="subscription_conditions" value="terms_and_conditions" id="terms_and_conditions" onfocusout="validateTermsAndConditions()">
+                            </div>
+                            <div class="label">
+                                <label for="terms-conditions"> I have read and agree with the <a href="#">Terms and Conditions</a>.</label>
+                            </div>
+                        </div>
+                        <div class="input-field-checkbox" id="alert_parent_consent">        
+                            <div class="square" id="not_checked">
+                                <input type="checkbox" name="parent_consent" value="parent_consent" id="parent_consent" onfocusout="validateParentConsent()">
+                            </div>
+                            <div class="label">
+                                <label for="parent-consent" > As a parent, I take care of creating a separate account than this one for my child and I take the responsibility for my child's activity.</label>
+                            </div>  
+                        </div>
+                    </fieldset> 
+
+                <input type="submit" name="btn_signup" class="btn" value="Sign up" />
+            </form>
+        </div> <!-- End of right-panel -->
+
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="vue_app.js"></script>
+  </body>
+</html>

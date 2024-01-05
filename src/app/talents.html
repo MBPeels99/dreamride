@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="website_stylesheet.css" />
+        
+        <!-- <script src="main_menu.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <title>Talents - Dream Ride</title>
+    </head>
+
+    <body>
+        <!-- ///////////////////////////////// TOPNAV ///////////////////////////////////////// -->
+            <topnav>
+                <div class="container">
+                    <div class="row">
+                        <div class="topbar">
+                            <!-- Left panel - contact info -->
+                            <div class="col-6">
+                                <div class="topbar-mail">
+                                    <div class="icon">
+                                        <ion-icon name="mail"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        <a href="mailto:info@dreamride.com">info@dreamride.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right panel - login/register/user -->
+                            <div class="col-6">
+
+                                <!-- /////////////////////// Right panel - before login (default) ///////////////////////// -->
+                                <div class="topbar-login-register">
+                                    <div class="topbar-link">
+                                        <a href="profile.html"> Demo account</a>
+                                     </div>
+                                    <div class="icon">
+                                        <ion-icon name="lock-closed"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                       <a href="loginsignup.html"> Login / Register</a>
+                                    </div>
+                                </div> 
+                                <!-- here default left panel ends -->
+
+                                <!-- ////////////////////// Left panel - after login ////////////////////////////// -->
+                                
+                                <!-- 
+                                <div class="topbar-login-register">
+                                    <div class="icon">
+                                        <ion-icon name="lock-open"></ion-icon>
+                                    </div>
+                                    <div class="topbar-link">
+                                        Hello, <a href="#">username</a>
+                                    </div>
+                                </div> 
+                                -->
+                                
+                                <!-- here left panel after login ends -->
+
+                              </div>
+                        </div>
+                    </div>
+            </topnav> 
+
+
+        <!-- ///////////////////////////////// NAVBAR - Logo, Main manu ///////////////////////////////////////// -->
+        
+        <div class="container">    
+            <div class="row">
+                <nav class="navbar">
+                    <div class="col-5">
+                        <!-- LOGO -->
+                        <div class="logo">
+                            <a href="index.html"><img src="img/DreamRide_logo.png"></a>
+                            <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="nav-links">
+                            <!-- NAVIGATION MENU -->
+                            <nav class="main-menu">
+                                <ul class="menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+
+                                <li class="dropdown">
+                                    <a href="talents.html" class="active">Talents</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                        
+                                <div class="mobile-menu">
+                                <div class="hamburger">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </div>
+                                <ul class="menu">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                        
+                                    <li class="dropdown">
+                                    <a href="talents.html" class="active">Talents</a>
+                                    <!-- DROPDOWN MENU - set not to be displayed on mobile -->
+                                    <ul class="dropdown-menu">
+                                        <li><a href="storywriters.html">Story writers</a></li>
+                                        <li><a href="illustrators.html">Illustrators</a></li>
+                                        <li><a href="paperengineers.html">Paper engineers</a></li>
+                                        <li><a href="translators.html">Translators</a></li>
+                                    </ul> 
+                                    </li>
+                                    
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="loginsignup.html">Login / Register</a></li>
+                                </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        
+
+        <!-- ///////////////////////////////// DEMO CONTENT ///////////////////////////////////////// -->
+
+        <div class="container">
+            <div class="space-xl">&nbsp;</div>
+
+            <div class="row-70">
+                <div class="col-12">
+                    <h2>Creative kids - Talents community</h2>
+                    <p>Dream Ride connects creative children from all corners of the globe. Here, young and talented story writers, illustrators, and paper engineers gather to bring Bobby's adventures to life. Imagine the thrill of collaborating with fellow young visionaries, exchanging ideas, and shaping the destiny of the Dream Ride universe.</p>
+                    <p>Let's create together a world where every child's dreams can ride freely, forever inspiring one another to reach for the stars.</p>
+                    <button class="button" onclick="window.location.href='illustrators.html';">Join us</button>
+                </div>
+            </div>
+
+            <div class="space-xl">&nbsp;</div>
+
+            <div class="row-70">
+                <!-- First col-3 Story writers -->
+                <div class="col-3">
+                    <h4>Story writers</h4>
+
+                    <!-- Scrollable content -->
+                    <div id="ecran1" style='width:100%; height:600px; overflow:hidden;'>
+                        <div class="container">
+            
+                            <!-- 1 column showing the last 5-10 published posts -->
+                            <div class="row-100">
+                                <!-- ////////////////////////////// Post 1 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>9 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Goldilocks and the Three Bears
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">345 Likes | <a class="link-to-full-post" href="view_full_post.html">872 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>Once upon a time there were three bears, who lived together in a house of their own in a wood. One of them was a little, small wee bear; one was a middle-sized bear, and the other was a great, huge bear.
+                                                    <br/>One day, after they had made porridge for their breakfast, they walked out into the wood while the porridge was cooling. And while they were walking, a little girl came into the house. This little girl had golden curls that tumbled down her back to her waist, and everyone called her by Goldilocks.</p>
+                                                <a href="view_full_post.html">View full post</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="space-xxs">&nbsp;</div>
+                                    </div>
+                                </div> <!-- End of Post 1 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 2 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>13 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    The Frog Prince
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">72 Likes | <a class="link-to-full-post" href="view_full_post.html">84 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                
+                                        <!-- Attached pictures -->
+                                        <!-- max 4 images => for loop -->
+                                        <div class="row-100">
+                                            <div class="post-content-image">
+                                                <img src="https://www.storynory.com/ezoimgfmt/storynory.com/wp-content/uploads/2007/06/frogkiss.jpg?ezimgfmt=ng%3Awebp%2Fngcb6%2Frs%3Adevice%2Frscb6-1" />
+                                            </div>
+                                        </div>
+
+                                        <!-- Textarea 2 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>In olden times, when if you made a wish, it would always come true, there lived a king whose daughters were all beautiful, but the youngest was so beautiful that the sun itself, which has seen so much, was astonished whenever it shone in her face. Close by the king’s castle lay a great dark forest, and under an old lime tree in the forest was a well. When the day was very warm, the king’s child went out into the forest and sat down by the side of the cool fountain, and when she was dull she took a golden ball, and threw it up on high and caught it, and this ball was her favourite plaything.</p>
+                                                    <a href="view_full_post.html">View full post</a>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="space-xxs">&nbsp;</div>
+                                    </div>
+                                </div><!-- End of post 2 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 3 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>12 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Androcles and the Lion
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">34 Likes | <a class="link-to-full-post" href="view_full_post.html">103 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                
+                                        <!-- Attached pictures -->
+                                        <!-- max 4 images => for loop -->
+                                        <div class="row-100">
+                                            <div class="post-content-image">
+                                                <img src="https://www.storynory.com/wp-content/uploads/2018/02/13566285-1F2F-4CE6-B0E1-E6223A3B4F23-600x600.jpeg?ezimgfmt=ng:webp/ngcb6" />
+                                            </div>
+                                        </div>
+
+                                        <!-- Textarea 2 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>It happened in ancient times that a slave named Androcles escaped from his master and fled into the forest, and he wandered there for a long time until he was weary.<br/>
+                                                    Just then he heard a lion near him moaning and groaning and at times roaring terribly.  And when  he tried to get up, there he saw the lion coming towards him.<br/>
+                                                    Instead of attacking him it kept on moaning and groaning and looking at Androcles, who saw that the lion was holding out his right paw, which was covered with blood and very much swollen. Looking more closely at it, Androcles saw a great big thorn pressed into the paw, which was the cause of all the lion’s trouble.<br/>
+                                                    Plucking up courage, he seized hold of the thorn and drew it out of the lion's paw, who roared with pain when the thorn came out, but soon after found such relief from it that he rubbed up against Androcles, and showed  that he knew, that he was truly thankful for being relieved from such pain.</p>
+                                                    <a href="view_full_post.html">View full post</a>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="space-xxs">&nbsp;</div>
+                                    </div>
+                                </div><!-- End of post 3 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 4 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>15 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    The Grasshopper and the Ants
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">34 Likes | <a class="link-to-full-post" href="view_full_post.html">103 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                
+                                        <!-- Textarea 2 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>I'm an artist, and as everyone knows, artists are usually rather poor. Normally, I don't mind about that. When the sun is shining, I sit on my favourite blade of grass and play music for everyone to listen to. I have lots of friends, and together we’ve formed an orchestra.
+                                                    <br/>Everyone loves our music and says how cheerful it makes them feel – well almost everyone. There’s a family of ants who never stop to listen. They take themselves far too seriously for music or enjoyment. All they do is work, work, work – even when the sun is shining.
+                                                    <br/>“Hey You Ants,” I said to them. “It’s a lovely summer’s day. Why don’t you rest your feet for a while, and listen to my sweet music?”
+                                                    <br/>“No time to stop,” one of them said, panting away. “We’re far too busy stocking up food for winter.”
+                                                    <br/>The months went by, and the days got shorter and colder. I was shivering so much that I couldn’t even sing. A hard frost was on the ground, and there wasn’t a crumb to eat. I was so hungry! So I went to see that busy family of ants and said: “Please Sirs, I’m a poor starving musician. Spare me a few crumbs from your store of food.”
+                                                    <br/>Do you know what? Those ants just turned their noses up at me. They were so stingy that they wouldn’t share any of their food. Oh Well, I’ll just have to go hungry this winter. In the New Year, I’ll make a resolution. When the times are good, I’ll remember to save some food for a rainy day.</p>
+                                                    <a href="view_full_post.html">View full post</a>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                            
+                                        </div>
+                                        <div class="space-xxs">&nbsp;</div>
+                                    </div>
+                                </div><!-- End of post 4 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 5 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>10 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    The Gingerbread Man
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">108 Likes | <a class="link-to-full-post" href="view_full_post.html">51 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>Once upon a time there was an old man, an old woman, and a little boy. One morning the old woman made some gingerbread in the shape of a man. She added icing for his hair and clothes, and little blobs of dough for his nose and eyes. When she put him in the oven to bake, she said to the little boy, "You watch the gingerbread man while your grandfather and I go out to work in the garden."
+                                                    <br/> So the old man and the old woman went out and began to dig potatoes, and left the little boy to tend the oven. But he started to day dream, and didn't watch it all of the time. All of a sudden he heard a noise, and he looked up and the oven door popped open, and out of the oven jumped a gingerbread man, and went rolling along end over end towards the open door of the house. The little boy ran to shut the door, but the gingerbread man was too quick for him and rolled through the door, down the steps, and out into the road long before the little boy could catch him.
+                                                    <br/>The little boy ran after him as fast as he could manage, crying out to his grandfather and grandmother, who heard the noise...</p>
+                                                <a href="view_full_post.html">View full post</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+                                    </div>
+                                </div> <!-- End of Post 5 -->
+                                <div class="space-posts">&nbsp;</div>
+
+                            </div>
+                
+                        </div>
+                    </div><!-- Ends scrollable content -->
+
+                    <button class="button" onclick="window.location.href='storywriters.html';">Explore more</button>
+                </div><!-- Ends the first col-3 -->
+
+                <!-- Second col-3 Illustartors -->
+                <div class="col-3">
+                    <h4>Illustrators</h4>
+                    <!-- Scrollable content -->
+                    <div id="ecran2" style='width:100%; height:600px; overflow: hidden;'>
+                        <div class="container">
+            
+                            <!-- 1 column showing the last 5-10 published posts -->
+                            <div class="row-100">
+
+                                <!-- ////////////////////////////// Post 1 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>15 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Threehead creature
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">345 Likes | <a class="link-to-full-post" href="view_full_post.html">872 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>My 6 years old brother drew a funny 3-head creature last week and I decided to transform it to digital illustration. What do you think?</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Attached pictures -->
+                                        <!-- max 4 images => for loop -->
+                                        <div class="row-100">
+                                            <div class="post-content-image">
+                                                <img src="https://www.boredpanda.com/blog/wp-content/uploads/2015/11/go-monster-project-kids-drawings-inspire-artists-43__880.jpg" />
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+
+                                    </div>
+                                </div> <!-- End of post 1 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 2 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>7 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Inspired by Lego drawing
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">48 Likes | <a class="link-to-full-post" href="view_full_post.html">81Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                    
+                                        <!-- Attached pictures -->
+                                        <!-- max 4 images => for loop -->
+                                        <div class="row-100">
+                                            <div class="post-content-image">
+                                                <img src="https://cdn.trendhunterstatic.com/phpthumbnails/19/19422/19422_1_600.jpeg?auto=webp" />
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+
+                                    </div>
+                                </div> <!-- End of post 2 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 3 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>28 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    How to draw a Child or Boy Step by Step
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                    
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">719 Likes | <a class="link-to-full-post" href="view_full_post.html">3798 Reactions</a></p>
+                                            </div>
+                    
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+                    
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>How to draw a Child easy and step by step. Draw this Boy Child by following this drawing lesson.<br/>
+                                                My next video post will be in a week. Don't miss it ;-)</p>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- /////////////// Link to video - only one option is getting visualized -->
+                                        <!-- Video-Option 1: if YouTube URL has been filled in -->
+                                        <div class="row-100">
+                                            <div class="post-content-video">
+                                                <iframe width="100%" src="https://www.youtube.com/embed/N97UMG4ukOc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>      
+                    
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                    
+                                        <div class="space-xxs">&nbsp;</div>
+                    
+                                    </div>
+                                </div> <!-- End of post 3 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 4 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>35 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    My son's drawing
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">18 Likes | <a class="link-to-full-post" href="view_full_post.html">11 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                    
+                                        <!-- Attached pictures -->
+                                        <!-- max 4 images => for loop -->
+                                        <div class="row-100">
+                                            <div class="post-content-image">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Child_drawing_age_3_crayon_on_paper.jpg/1200px-Child_drawing_age_3_crayon_on_paper.jpg" />
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+
+                                    </div>
+                                </div> <!-- End of post 4 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 5 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>12 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Colorful world
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">37 Likes | <a class="link-to-full-post" href="view_full_post.html">131 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 2 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>I imagine Bobby goes there in the next book and all the habitants of this place can control the colors. Magic is all around us! </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Attached pictures -->
+                                        <!-- max 4 images => for loop -->
+                                        <div class="row-100">
+                                            <div class="post-content-image">
+                                                <img src="https://media.istockphoto.com/id/1310740320/vector/watercolor-children-drawing-space-planet-rocket.jpg?s=612x612&w=0&k=20&c=CMYZwzwm7FK_zi0cjM1GI_esdTkmCuPLnWN3hFvMICE=" />
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+
+                                    </div>
+                                </div> <!-- End of post 5 -->
+
+
+                                <div class="space-posts">&nbsp;</div>
+
+                            </div>
+                        </div>
+                    </div><!-- Ends scrollable content -->
+                    <button class="button" onclick="window.location.href='illustrators.html';">Explore more</button>
+                </div>
+
+                <!-- Second col-3 Paper engineers -->
+                <div class="col-3">
+                    <h4>Paper engineers</h4>
+                    <!-- Scrollable content -->
+                    <div id="ecran3" style='width:100%; height:600px; overflow: hidden;'>
+                        <div class="container">
+            
+                            <!-- 1 column showing the last 5-10 published posts -->
+                            <div class="row-100">
+
+                                <!-- ////////////////////////////// Post 1 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>37 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Designing a Star Wars Pop-Up Book!
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                    
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">345 Likes | <a class="link-to-full-post" href="view_full_post.html">872 Reactions</a></p>
+                                            </div>
+                    
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+                    
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>Again it's time for inspiration. This week I share with you an interview with the paper engineer Matthew Reinhart, direct from his studio. He is an award-winning designer of pop-up books including most recently Star Wars: The Ultimate Pop-Up Galaxy. Matthew shows us his handmade pop-up prototypes and his process for designing the interactive pages of this new book. </p>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- /////////////// Link to video - only one option is getting visualized -->
+                                        <!-- Video-Option 1: if YouTube URL has been filled in -->
+                                        <div class="row-100">
+                                            <div class="post-content-video">
+                                                <iframe src="https://www.youtube.com/embed/Xq49o5LhdGM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                    
+                                        <div class="space-xxs">&nbsp;</div>
+                    
+                                    </div>
+                                </div> <!-- End of post 1 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 2 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>16 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Tutorial: Very easy pop-up animals
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                            <!--   <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                    
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">19 Likes | <a class="link-to-full-post" href="view_full_post.html">52 Reactions</a></p>
+                                            </div>
+                    
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+                    
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>Follow along as we create pop up animals in this basic tutorial. <br/>
+                                                    This activity is appropriate for all ages (although some younger kids might need a little help).</p>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- /////////////// Link to video - only one option is getting visualized -->
+                                        <!-- Video-Option 1: if YouTube URL has been filled in -->
+                                        <div class="row-100">
+                                            <div class="post-content-video">
+                                                <iframe src="https://www.youtube.com/embed/qMhzKKqNboc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                    
+                                        <div class="space-xxs">&nbsp;</div>
+                    
+                                    </div>
+                                </div> <!-- End of post 2 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 3 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>65 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Figure #47 from the Complexities of Pop-Up
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                    
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">199 Likes | <a class="link-to-full-post" href="view_full_post.html">1078 Reactions</a></p>
+                                            </div>
+                    
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+                    
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <div class="row-70">
+                                            <div class="referral-post-info">
+                                                <p>
+                                                    Reply to: <a href="#">Book: The complexities of pop-up</a><br/>
+                                                    Published by: <a href="#">username</a></br>
+                                                    Date of publication: 16.04.2019
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>In this video I'll show you how to assemble figure #47 from the Complexities of Pop-Up. <br/>
+                                                You can download for free the template: <a href="https://www.popupbooks.com/wp-content/uploads/complexities/FIGURE-46-47.pdf"> here</a></p>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- /////////////// Link to video - only one option is getting visualized -->
+                                        <!-- Video-Option 1: if YouTube URL has been filled in -->
+                                        <div class="row-100">
+                                            <div class="post-content-video">
+                                                <iframe src="https://www.youtube.com/embed/YYUId2qDyOE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                    
+                                        <div class="space-xxs">&nbsp;</div>
+                    
+                                    </div>
+                                </div> <!-- End of post 3 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 4 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>21 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Mind-blowing pop-up books
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                             <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                               <!--  <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                    
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">1005 Likes | <a class="link-to-full-post" href="view_full_post.html">617 Reactions</a></p>
+                                            </div>
+                    
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+                    
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>In this video, I will show you the most beautiful, stunning and amazing pop-up books from my pop-up book collection.</p>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- /////////////// Link to video - only one option is getting visualized -->
+                                        <!-- Video-Option 1: if YouTube URL has been filled in -->
+                                        <div class="row-100">
+                                            <div class="post-content-video">
+                                                <iframe src="https://www.youtube.com/embed/pZiVuo4wF24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                    
+                                        <div class="space-xxs">&nbsp;</div>
+                    
+                                    </div>
+                                </div> <!-- End of post 4 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 5 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>49 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Pop-Up tutorial 6 - Parallel-folds Part 2 Symmetric & Asymmetric
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                    
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">287 Likes | <a class="link-to-full-post" href="view_full_post.html">719 Reactions</a></p>
+                                            </div>
+                    
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+                    
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>This tutorial explains an easy way to make the range of pop-up shapes that are based on Parallel-folds.  Although simple in themselves they are an important feature of pop-up design as they often form the foundation of highly complex mechanisms.</p>
+                                            </div>
+                                        </div>
+                    
+                                        <!-- /////////////// Link to video - only one option is getting visualized -->
+                                        <!-- Video-Option 1: if YouTube URL has been filled in -->
+                                        <div class="row-100">
+                                            <div class="post-content-video">
+                                                <iframe src="https://www.youtube.com/embed/9xRj1-OUX64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+                    
+                                        <div class="space-xxs">&nbsp;</div>
+                    
+                                    </div>
+                                </div> <!-- End of post 5 -->
+
+                                <!-- End of post 5 -->
+                                <div class="space-posts">&nbsp;</div>
+
+                            </div>
+                        </div>
+                    </div><!-- Ends scrollable content -->
+                    <button class="button" onclick="window.location.href='paperengineers.html';">Explore more</button>
+                </div>
+
+                <!-- Second col-3 Translators -->
+                <div class="col-3">
+                    <h4>Translators</h4>
+                    <!-- Scrollable content -->
+                    <div id="ecran4" style='width:100%; height:600px; overflow: hidden;'>
+                        <div class="container">
+            
+                            <!-- 1 column showing the last 5-10 published posts -->
+                            <div class="row-100">
+
+                                <!-- ////////////////////////////// Post 1 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>13 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Златокоска и трите мечки
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">345 Likes | <a class="link-to-full-post" href="view_full_post.html">872 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <div class="row-70">
+                                            <div class="referral-post-info">
+                                                <p>
+                                                    Reply to: <a href="#">Goldilocks and the Three Bears</a><br/>
+                                                    Published by: <a href="#">username</a></br>
+                                                    Date of publication: 18.10.2022
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>I would like to present you a Bulgarian translation of the fairy tale published a month ago.<br/>
+                                                Enjoy!</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Textarea 2 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>Имало едно време три мечки, които живеели заедно в собствена къща в една гора. Едното било малко, малко мече, другото било средно голямо, а третото - голямо, огромно.<br/>
+                                                    Един ден, след като приготвили каша за закуска, те излезли в гората, докато кашата се охлаждала. И докато се разхождали, в къщата влязло едно малко момиченце. Това момиченце имало златни къдрици, които се спускали по гърба му до кръста, и всички го наричали по име Златка.</p>
+                                                <a href="view_full_post.html">View full post</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+                                    </div>
+                                </div> <!-- End of Post 1 -->
+
+                                <!-- Under each post there is equal empty space -->
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 2 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>12 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    Lesson in Dutch: Transportation
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">72 Likes | <a class="link-to-full-post" href="view_full_post.html">84 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                
+                                        <!-- Attached pictures -->
+                                        <!-- max 4 images => for loop -->
+                                        <div class="row-100">
+                                            <div class="post-content-image">
+                                                <img src="https://i.pinimg.com/564x/cf/47/59/cf4759be7b95b92e2f1c88f97c2b8faf.jpg" />
+                                            </div>
+                                        </div>
+
+                                        <!-- Textarea 2 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>Video available on: <a href="https://www.youtube.com/watch?v=cWzHbyUH134">YouTube</a> </p>
+                                                    
+                                            </div>
+                                        </div>
+
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+
+                                    </div>
+                                </div><!-- End of post 2 -->
+
+                                <div class="space-posts">&nbsp;</div>
+
+                                <!-- ////////////////////////////// Post 5 ////////////////////////////////-->
+                                <div class="post-container">
+                                    <div class="full-post-content">
+                                        <!-- Header -->
+                                        <div class="post-header">
+                                            <div class="row-70-post">
+                                                <div class="col-3">
+                                                    <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                                </div>
+                                                <div class="col-9">
+                                                    <div class="post-author">
+                                                        <a href="#">Publisher username</a>
+                                                        <p>10 years old</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Titel and social reactions -->
+                                        <!-- Titel -->
+                                        <div class="row-70">
+                                            <div class="col-12">
+                                                <div class="post-titel">
+                                                    The Gingerbread Man - Translation in Greek
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Social reactions -->
+                                        <div class="row-70-post">
+                                            <!-- Like button -->
+                                            <div class="col-2">
+                                            <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already liked -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="thumbs-up"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+
+                                            <!-- Statistic social interaction -->
+                                            <div class="col-8">
+                                                <p class="post-info">108 Likes | <a class="link-to-full-post" href="view_full_post.html">51 Reactions</a></p>
+                                            </div>
+
+                                            <!-- Favorites (Save) button -->
+                                            <div class="col-2">
+                                                <button class="button-post-reactions" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart-outline"></ion-icon>
+                                                    </span>
+                                                </button>
+                                                <!-- Icon filled when post has been already saved -->
+                                                <!-- <button class="button-post-reacted" type="" name="">
+                                                    <span class="icon">
+                                                        <ion-icon name="heart"></ion-icon>
+                                                    </span>
+                                                </button> -->
+                                            </div>
+                                        </div> <!-- End of section "Social reactions" -->
+
+                                        <!-- ////////////////////////////// Post content ///////////////////////// -->
+                                        <!-- Textarea 1 -->
+                                        <div class="row-70">
+                                            <div class="content-post">
+                                                <p>Μια φορά κι έναν καιρό ήταν ένας γέρος, μια γριά και ένα μικρό αγόρι. Ένα πρωί η γριά γυναίκα έφτιαξε μελομακάρονα σε σχήμα ανθρώπου. Πρόσθεσε γλάσο για τα μαλλιά και τα ρούχα του και μικρές σταγόνες ζύμης για τη μύτη και τα μάτια του. Όταν τον έβαλε στο φούρνο για να ψηθεί, είπε στο μικρό αγόρι: "Εσύ θα προσέχεις τον μελομακάρονο όσο εγώ και ο παππούς σου θα πηγαίνουμε έξω να δουλέψουμε στον κήπο".
+                                                    Έτσι, ο γέρος και η γριά βγήκαν έξω και άρχισαν να σκάβουν πατάτες και άφησαν το μικρό αγόρι να προσέχει το φούρνο. Εκείνο όμως άρχισε να ονειρεύεται και δεν το πρόσεχε συνέχεια. Ξαφνικά άκουσε έναν θόρυβο, και κοίταξε ψηλά και η πόρτα του φούρνου άνοιξε και από τον φούρνο πετάχτηκε ένας μελομακάρονος και κυλούσε με την άκρη προς την ανοιχτή πόρτα του σπιτιού. Το μικρό αγόρι έτρεξε να κλείσει την πόρτα, αλλά ο μελομακάρονος ήταν πολύ γρήγορος γι' αυτόν και κύλησε μέσα από την πόρτα, κατέβηκε τα σκαλιά και βγήκε στο δρόμο πολύ πριν το μικρό αγόρι προλάβει να τον πιάσει.
+                                                    Το μικρό αγόρι έτρεξε πίσω του όσο πιο γρήγορα μπορούσε, φωνάζοντας στον παππού και τη γιαγιά του, που άκουσαν το θόρυβο...</p>
+                                                <a href="view_full_post.html">View full post</a>
+                                            </div>
+                                        </div>
+
+                                        <!-- ////////////////////////////// Action button ///////////////////////// -->
+                                        <!-- Share this post -->
+                                        <div class="row-70">
+                                            <button class="button-share-post" type="" name="">
+                                                <span class="icon">
+                                                    <ion-icon name="share-social"></ion-icon>
+                                                    Share
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <div class="space-xxs">&nbsp;</div>
+                                    </div>
+                                </div> <!-- End of Post 5 -->
+                                <div class="space-posts">&nbsp;</div>
+
+                            </div>
+                        </div>
+                    </div><!-- Ends scrollable content -->
+                    <button class="button" onclick="window.location.href='translators.html';">Explore more</button>
+                </div>
+            </div>
+            
+            <div class="space-xl">&nbsp;</div>
+        </div>
+
+
+        <!-- //////////////////////////////////////////  FOOTER  ///////////////////////////////////////  -->
+
+        <div class="container">    
+            <div class="row">
+                <footer class="footer">
+                    <div class="col-12">
+                        <div class="space-l">&nbsp;</div>
+                        <div class="footer-logo">
+                            <img src="img/DreamRide_logo_yellow.png">
+                            <!-- <img src="img/DreamRide_logo.png"> -->  <!-- Regarding Bitbucket file structure -->
+                        </div>
+                        <div class="contact-info-footer">DreamRide 2023 &nbsp; | &nbsp; <a href="mailto:info@dreamride.com">info@dreamride.com</a></div>
+                        <div class="space-xs">&nbsp;</div>
+                   
+                </footer>
+            </div>
+        </div>
+
+        <script src="main_menu.js"></script>
+
+        <script type='text/javascript'>
+            function ScrollDiv(){
+                for(let i=1; i<=4; i++) {
+                    if(document.getElementById('ecran'+i).scrollTop<(document.getElementById('ecran'+i).scrollHeight-document.getElementById('ecran'+i).offsetHeight)){-1
+                        document.getElementById('ecran'+i).scrollTop=document.getElementById('ecran'+i).scrollTop+1
+                        }
+                    else {document.getElementById('ecran'+i).scrollTop=0;}
+                }
+                
+            }
+            
+            setInterval(ScrollDiv,20) // sec to scroll to the bottom
+        </script>
+    </body>
+</html>

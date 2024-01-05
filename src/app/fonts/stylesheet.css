@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Concert One';
+    src: url('ConcertOne-Regular.woff2') format('woff2'),
+        url('ConcertOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'a Alloy Ink';
+    src: url('aAlloyInk.woff2') format('woff2'),
+        url('aAlloyInk.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+

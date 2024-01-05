@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Account Information</title>
+  <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.prod.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Account Information</h1>
+  
+    <button v-on:click="getAccountInfo">Get Account</button>
+    <p>
+      Chosen: {{ account.first_name }} {{ account.last_name }}
+    </p>
+    
+    
+    <button v-on:click="getAllAccountInfo">Get All Accounts</button>
+      <ul>
+        <li v-for="acc in account" :key="acc.id">
+          {{ acc.first_name }} - {{ acc.id }}
+        </li>
+      </ul>
+
+    <form @submit.prevent="addAccount" :id="new_user">
+      <input placeholder="First name" v-model="first_name">
+      <input placeholder="Last name" v-model="last_name">
+      <input  type="date" v-model="date_of_birth">
+      <input placeholder="Password" v-model="password">
+      <input placeholder="Country" v-model="country">
+      <input placeholder="Language" v-model="language">
+      <input placeholder="Email" v-model="email">
+      <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <form @submit.prevent="deleteAccount" :id="delete_user">
+        <input placeholder="Account ID" v-model="account_id">
+        <button type="submit" class="btn btn-primary">Delete</button>
+      </form>
+      <form @submit.prevent="updateAccountInfo">
+        <button type="submit" class="btn btn-primary">Update</button>
+      </form>
+
+
+    <p>First name: {{first_name}}</p>
+    <p>Last name: {{last_name}}</p>
+    <p>Password: {{password}}</p>
+    <p>Country: {{country}}</p>
+    <p>Language: {{language}}</p>
+    <p>Email: {{email}}</p>
+  </div>
+  
+  <script src="vue_app.js"></script>
+</body>
+</html>

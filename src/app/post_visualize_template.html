@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.prod.js"></script>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+        <script src="registration_form.js"></script>
+
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="website_stylesheet.css" />
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+        <!-- Icons -->
+        <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <title>Generic post visualize template - Dream Ride</title>
+    </head>
+
+    <!-- Board with posts (Pinterest alike) -->
+    <div class="row-70">
+        <!-- /////////////////////////////////// col 1 ///////////////////////////////// -->
+        <div class="col-3">
+
+
+            <!-- ////////////////////////////// GENERAL POST TEMPLATE ////////////////////////////////-->
+            <div class="post-container">
+                <div class="full-post-content">
+                    <!-- Header -->
+                    <div class="post-header">
+                        <div class="row-70-post">
+                            <div class="col-3">
+                                <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                            </div>
+                            <div class="col-9">
+                                <div class="post-author">
+                                    <a href="#">Publisher username</a>
+                                    <p>Age</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Titel and social reactions -->
+                    <!-- Titel -->
+                    <div class="row-70">
+                        <div class="col-12">
+                            <div class="post-titel">
+                                Post title
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social reactions -->
+                    <div class="row-70-post">
+                        <!-- Like button -->
+                        <div class="col-2">
+                         <button class="button-post-reactions" type="" name="">
+                                <span class="icon">
+                                    <ion-icon name="thumbs-up-outline"></ion-icon>
+                                </span>
+                            </button>
+                            <!-- Icon filled when post has been already liked -->
+                            <!-- <button class="button-post-reacted" type="" name="">
+                                <span class="icon">
+                                    <ion-icon name="thumbs-up"></ion-icon>
+                                </span>
+                            </button> -->
+                        </div>
+
+                        <!-- Statistic social interaction -->
+                        <div class="col-8">
+                            <p class="post-info">345 Likes | <a class="link-to-full-post" href="view_full_post.html">872 Reactions</a></p>
+                        </div>
+
+                        <!-- Favorites (Save) button -->
+                        <div class="col-2">
+                            <button class="button-post-reactions" type="" name="">
+                                <span class="icon">
+                                    <ion-icon name="heart-outline"></ion-icon>
+                                </span>
+                            </button>
+                            <!-- Icon filled when post has been already saved -->
+                            <!-- <button class="button-post-reacted" type="" name="">
+                                <span class="icon">
+                                    <ion-icon name="heart"></ion-icon>
+                                </span>
+                            </button> -->
+                        </div>
+                    </div> <!-- End of section "Social reactions" -->
+
+                    <!-- ////////////////////////////// Post content ///////////////////////// -->
+                    <!-- Referral post -->
+                    <div class="row-70">
+                        <div class="referral-post-info">
+                            <p>
+                                Reply to: <a href="#">Title of the referral post</a><br/>
+                                Published by: <a href="#">username</a></br>
+                                Date of publication: dd.mm.yyyy
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Textarea 1 -->
+                    <div class="row-70">
+                        <div class="content-post">
+                            <p>Text from field Textarea 1</p>
+                        </div>
+                    </div>
+
+                    <!-- Attached pictures -->
+                    <!-- max 4 images => for loop -->
+                    <div class="row-100">
+                        <div class="post-content-image">
+                            <img src="link to the file, which has been uploaded in DB" />
+                        </div>
+                    </div>
+
+                    <!-- /////////////// Link to video - only one option is getting visualized -->
+                    <!-- Video-Option 1: if YouTube URL has been filled in -->
+                    <div class="row-100">
+                        <div class="post-content-video">
+                            <iframe src="YouTube URL from the input field" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video-Option 2: if Vimeo URL has been filled in -->
+                    <div class="row-100">
+                        <div class="post-content-video">
+                            <iframe src="Vimeo URL from the input field" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <!-- Video-Option 3: if Tik-Tok URL has been filled in -->
+                    <div class="row-100">
+                        <div class="post-content-video">
+                            <!-- The whole tag <blockquote> has to be get from the create new post form -->
+                            <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@doodleideaswhenbored/video/7168202963339463942" data-video-id="7168202963339463942" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@doodleideaswhenbored" href="https://www.tiktok.com/@doodleideaswhenbored?refer=embed">@doodleideaswhenbored</a> Simple drawings with an important message 🚬<a title="drawing" target="_blank" href="https://www.tiktok.com/tag/drawing?refer=embed">#drawing</a> <a title="artistoftiktok" target="_blank" href="https://www.tiktok.com/tag/artistoftiktok?refer=embed">#artistoftiktok</a> <a title="blowthisup" target="_blank" href="https://www.tiktok.com/tag/blowthisup?refer=embed">#blowthisup</a> <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a title="painting" target="_blank" href="https://www.tiktok.com/tag/painting?refer=embed">#painting</a> <a title="fypシ" target="_blank" href="https://www.tiktok.com/tag/fyp%E3%82%B7?refer=embed">#fypシ</a> <a title="antismoking" target="_blank" href="https://www.tiktok.com/tag/antismoking?refer=embed">#antismoking</a><a title="antismoke" target="_blank" href="https://www.tiktok.com/tag/antismoke?refer=embed">#antismoke</a> <a target="_blank" title="♬ Stargirl Interlude - The Weeknd" href="https://www.tiktok.com/music/Stargirl-Interlude-6751005932647352321?refer=embed">♬ Stargirl Interlude - The Weeknd</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+                        </div>
+                    </div>
+
+                    <!-- Textarea 2 -->
+                    <div class="row-70">
+                        <div class="content-post">
+                            <p>Text from field Textarea 2</p>
+                        </div>
+                    </div>
+
+
+                    <!-- ////////////////////////////// Action button ///////////////////////// -->
+                    <!-- Share this post -->
+                    <div class="row-70">
+                        <button class="button-share-post" type="" name="">
+                            <span class="icon">
+                                <ion-icon name="share-social"></ion-icon>
+                                Share
+                            </span>
+                        </button>
+                    </div>
+
+                    <div class="space-xxs">&nbsp;</div>
+
+                </div>
+            </div> <!-- End of the GENERAL POST TEMPLATE -->
+
+            <!-- Under each post there is equal empty space -->
+            <div class="space-posts">&nbsp;</div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+# Turn rewrite engine on
+Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+RewriteRule ^user/list/$   user/UserRestController.php?page_key=all [nc,qsa]
+RewriteRule ^user/id/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$   user/UserRestController.php?page_key=single&id=$1 [nc,qsa]
+RewriteRule ^user/create/$   user/UserRestController.php?page_key=create [L]
+#RewriteRule ^user/create$  user/create/ [L,R=301]
+RewriteRule ^user/delete/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$  user/UserRestController.php?page_key=delete&id=$1 [L]
+RewriteRule ^user/delete([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$   user/delete/$1 [L,R=301]
+RewriteRule ^user/update/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$   user/UserRestController.php?page_key=update&id=$1 [L]
+RewriteRule ^user/update/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$   user/update/$1/ [L,R=301]
+RewriteRule ^user/session/$ user/UserRestController.php?page_key=session [nc,qsa]
+
+# Map neat URL to internal URL for Account resource
+RewriteRule ^account/list/$ account/AccountRestController.php?page_key=all [nc,qsa]
+RewriteRule ^account/id/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$ account/AccountRestController.php?page_key=single&id=$1 [nc,qsa]
+RewriteRule ^account/create/$ account/AccountRestController.php?page_key=create [L]
+RewriteRule ^account/create$ account/create/ [L,R=301]
+RewriteRule ^account/delete/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$ account/AccountRestController.php?page_key=delete&id=$1 [L]
+RewriteRule ^account/delete([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$ account/delete/$1 [L,R=301]
+RewriteRule ^account/update/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$ account/AccountRestController.php?page_key=update&id=$1 [L]
+RewriteRule ^account/update/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$ account/update/$1/ [L,R=301]
+RewriteRule ^account/session/$ account/AccountRestController.php?page_key=session [nc,qsa]
+
+# Map neat URL to internal URL for Post resource
+RewriteRule ^post/list/$ post/PostRestController.php?page_key=all [nc,qsa]
+RewriteRule ^post/id/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$ post/PostRestController.php?page_key=single&id=$1 [nc,qsa]
+RewriteRule ^post/create/$ post/PostRestController.php?page_key=create [L]
+RewriteRule ^post/create$ post/create/ [L,R=301]
+RewriteRule ^post/delete/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$ post/PostRestController.php?page_key=delete&id=$1 [L]
+RewriteRule ^post/delete([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$ post/delete/$1 [L,R=301]
+RewriteRule ^post/update/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})/$ post/PostRestController.php?page_key=update&id=$1 [L]
+RewriteRule ^post/update/([0-9a-f]{8}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{4}[-][0-9a-f]{12})$ post/update/$1/ [L,R=301]
+#RewriteRule ^post/session/$ post/PostRestController.php?page_key=session [nc,qsa]

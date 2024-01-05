@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="fonts/stylesheet.css" />
+        <link rel="stylesheet" href="website_stylesheet.css" />
+        
+        <!-- <script src="main_menu.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <title>Dashboard - Dream Ride</title>
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="row-70">
+
+                <!-- /////////////////////////////////// col 1 ///////////////////////////////// -->
+                <div class="col-3">
+
+                    <!-- ////////////////////////////// Post 1 ////////////////////////////////-->
+                    <div class="post-container">
+                        <div class="full-post-content">
+                            <!-- Header -->
+                            <div class="post-header">
+                                <div class="row-100">
+                                    <div class="col-4">
+                                        <img class="profile-pic-post" src="img/default_profile_pic.jpg" />
+                                    </div>
+                                    <div class="col-8">
+                                        <div class="post-author">
+                                            <a href="#">Publisher username</a>
+                                            <p>9 years old</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Titel and social reactions -->
+                            <!-- Titel -->
+                            <div class="row-70">
+                                <div class="col-12">
+                                    <div class="post-titel">
+                                        What caffeine does to your brain, and how too much can lead to sleep deprivation
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social reactions -->
+                            <div class="row-70">
+                                <!-- Like button -->
+                                <div class="col-2">
+                                    <button class="button-post-reactions" type="" name="">
+                                        <span class="icon">
+                                            <ion-icon name="thumbs-up-outline"></ion-icon>
+                                        </span>
+                                    </button>
+                                    <!-- Icon filled when post has been already liked -->
+                                    <!-- <button class="button-post-reactions" type="" name="">
+                                        <span class="icon">
+                                            <ion-icon name="thumbs-up"></ion-icon>
+                                        </span>
+                                    </button> -->
+                                </div>
+
+                                <!-- Statistic social interaction -->
+                                <div class="col-8">
+                                    <p class="post-info">345 Likes | 872 Reactions</p>
+                                </div>
+
+                                <!-- Favorites (Save) button -->
+                                <div class="col-2">
+                                    <button class="button-post-reactions" type="" name="">
+                                        <span class="icon">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </span>
+                                    </button>
+                                    <!-- Icon filled when post has been already saved -->
+                                    <!-- <button class="button-post-reactions" type="" name="">
+                                        <span class="icon">
+                                            <ion-icon name="heart"></ion-icon>
+                                        </span>
+                                    </button> -->
+                                </div>
+                            </div> <!-- End of section "Social reactions" -->
+
+                            <!-- Post content -->
+                            <div class="row-100">
+                                <div class="post-content-image">
+                                    <img src="img/book-example.jpg" />
+                                </div>
+                            </div>
+                            <div class="row-70">
+                                <div class="content-post">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                            </div>
+
+                         <!--    <button class="read-more">Read more</button> -->
+
+                            <!-- Post share -->
+                            <div class="row-70">
+                                <button class="button-share-post" type="" name="">
+                                    <span class="icon">
+                                        <ion-icon name="share-social"></ion-icon>
+                                        Share
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+     
+                </div> <!-- End of the first column "col-3" -->
+            </div> <!-- End of the first row -->
+        </div> <!-- End of the main container -->
+        
+        <!-- <script>
+            const container = document.querySelector('.post-container');
+            const content = document.querySelector('.full-post-content');
+            const readMoreBtn = document.querySelector('.read-more');
+
+            readMoreBtn.addEventListener('click', function() {
+            container.classList.toggle('expanded');
+            
+            if (container.classList.contains('expanded')) {
+                readMoreBtn.textContent = 'Read less';
+            } else {
+                readMoreBtn.textContent = 'Read more';
+            }
+            });
+
+            // Check if content overflows and show the "Read more" button accordingly
+            if (content.scrollHeight > container.clientHeight) {
+            readMoreBtn.style.display = 'block';
+            } else {
+            readMoreBtn.style.display = 'none';
+            }
+
+        </script> -->
+    </body>
+</html>
